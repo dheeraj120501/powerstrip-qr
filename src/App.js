@@ -3,7 +3,7 @@ import MobileDetect from "mobile-detect";
 import { RotatingSquare } from "react-loader-spinner";
 
 export default function App() {
-  const [about, setAbout] = React.useState(null);
+  const [, setAbout] = React.useState(null);
   const redirect = (url) => {
     window.location = url;
   };
