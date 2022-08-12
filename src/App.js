@@ -10,7 +10,7 @@ export default function App() {
 
   React.useEffect(() => {
     if (window.location.href.includes("deviceId")) {
-      window.location = "https://gvf67b.csb.app/?deviceId=123";
+      window.location = `${window.location.href}/?deviceId=123`;
       console.log(window.location.href.includes("deviceId"));
     } else {
       const md = new MobileDetect(window.navigator.userAgent);
