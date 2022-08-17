@@ -19,7 +19,7 @@ export default function App() {
           ),
         500
       );
-    if (md.is("iPhone"))
+    else if (md.is("iPhone"))
       setTimeout(
         () =>
           redirect(
@@ -27,7 +27,7 @@ export default function App() {
           ),
         500
       );
-    setTimeout(() => redirect("https://www.powerstrip.in"), 500);
+    else setTimeout(() => redirect("https://www.powerstrip.in"), 500);
   }, []);
   return (
     <div className="App">
