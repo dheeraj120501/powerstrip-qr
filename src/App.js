@@ -15,20 +15,19 @@ export default function App() {
       setTimeout(
         () =>
           redirect(
-            "https://play.google.com/store/apps/details?id=com.whatsapp&deviceId=123"
+            "https://play.google.com/store/apps/details?id=com.whatsapp"
           ),
         500
       );
-    if (md.is("iPhone"))
+    else if (md.is("iPhone"))
       setTimeout(
         () =>
           redirect(
-            "https://apps.apple.com/in/app/whatsapp-messenger/id310633997/?deviceId=123"
+            "https://apps.apple.com/in/app/whatsapp-messenger/id310633997"
           ),
         500
       );
-
-    setTimeout(() => redirect("https://www.powerstrip.in/?deviceId=123"), 500);
+    else setTimeout(() => redirect("https://www.powerstrip.in"), 500);
   }, []);
   return (
     <div className="App">
